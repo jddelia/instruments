@@ -1,14 +1,126 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  font-family: "raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(#ECE9E6, #FFFFFF);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+nav {
+  height: 35px;
+  padding: 1% 1%;
+  display: flex;
+  border-bottom: 1px solid silver;
+}
+
+nav a {
+  padding: .5% 2%;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  color: #222;
+}
+
+nav a:hover {
+  border: 1px solid;
+  border-radius: 5px;
+  font-size: 15.3px;
+}
+
+h1 {
+  font-family: 'Major Mono Display', monospace;
+  font-size: 30px;
+
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+#about {
+  display: none;
+  justify-content: center;
+}
+
+.desc {
+  padding-left: 2%;
+}
+
+.desc h2 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+.desc p {
+  text-align: center;
+  margin-top: -2%;
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 1.8;
+  letter-spacing: 2px;
+}
+
+.chords {
+  padding: 1% 0;
+}
+
+.note-btn {
+  outline: none;
+  margin: 1% 2%;
+  height: 50px;
+  width: 100px;
+  background-color: rgb(117, 117, 167);
+  border: 1px solid rgb(117, 117, 167);
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px rgb(133, 131, 138);
+}
+
+.note-btn:active {
+  box-shadow: 1px 1px 4px rgb(133, 131, 138);
+}
+
+.control {
+  padding-bottom: 1%;
+  display: flex;
+  justify-content: center;
+}
+
+.select-instrument {
+  outline: none;
+  margin: 0 2%;
+  height: 50px;
+  width: 150px;
+  font-variant: small-caps;
+  background-color: rgb(127, 206, 160);
+  border: 1px solid rgb(99, 207, 148);
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px rgb(74, 105, 84);
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+  
+  #about {
+    display: flex;
+  }
 }
